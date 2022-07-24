@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+
+
+    <div class="jumbotron">
+        <div class="bg container-fluid">
+        <h1 class="display-4"> Bet Haber Sitesi Uygulaması</h1>
+        <p class="lead fst-italic ">Merak uyandıran haberlerimizi oku.<br> Eğer sen de bilgilerini paylaşmak istersen <br> giriş yap ya da kaydol.
+            <strong>Aramıza Hoş Geldin...</strong></p>
+        <p class="lead" >
+            <a class="btn btn-warning btn-lg fw-normal" href="{% url 'article_list' %}" role="button">Bütün Makalelere Göz At...</a>
+        </p>
+        </div>
+    </div>
+
+
+
+
+{% endblock content %}

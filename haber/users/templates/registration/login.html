@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %} Giris {% endblock title %}
+{% block content %}
+<h2>Oturum Aç</h2>
+<form method='post'>
+    {% csrf_token %}
+    {{form.as_p}}
+    <button class="btn btn-info btn-lg" type="submit"> Giriş </button>
+</form>
+{% endblock content %}
+
